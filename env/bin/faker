@@ -1,0 +1,12 @@
+#!"/home/mach/Documents/Creative Panda/Shupp E-com/env/bin/python3"
+# EASY-INSTALL-ENTRY-SCRIPT: 'fake-factory==0.5.3','console_scripts','faker'
+__requires__ = 'fake-factory==0.5.3'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('fake-factory==0.5.3', 'console_scripts', 'faker')()
+    )

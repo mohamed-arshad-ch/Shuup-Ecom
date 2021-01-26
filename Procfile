@@ -1,0 +1,1 @@
+web: gunicorn env.lib.python3.8.site-packages.shuup_workbench.wsgi
